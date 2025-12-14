@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+google-generativeai
+requests
+pytest
+python-dotenv
+numpy
+soundfile
