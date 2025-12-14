@@ -1,7 +1,7 @@
-# voice-intent-sentiment-analysis
+
 # voice-intent-sentiment-analyzer
 
-A step-by-step GitHub-ready project scaffold to analyze call / voice recordings using a voice LLM (e.g., Gemini Voice). The project transcribes audio, performs speaker diarization (optional), and runs an intent/tone/sentiment extraction pipeline producing structured JSON and a small dashboard.
+A step-by-step GitHub-ready project scaffold to analyze call/voice recordings using a voice LLM (e.g., Gemini Voice). The project transcribes audio, performs speaker diarization (optional), and runs an intent/tone/sentiment extraction pipeline producing structured JSON and a small dashboard.
 
 ---
 
@@ -173,8 +173,21 @@ Structured JSON Response
 
 ---
 
+## ⚠️ API Quota Note
 
-## 🧠 Resume Value
+This project integrates with external LLM and transcription providers (OpenAI / Gemini).
+During development, API quota limits may cause `429: insufficient_quota` errors.
+
+To keep the repository production-realistic:
+- The integration code is left intact
+- API keys are loaded via environment variables
+- No keys are committed to the repository
+
+If quota errors occur:
+- The API layer can be switched to a mock provider
+- Or billing/credits can be enabled on the provider account
+
+This does not affect the project architecture or logic.
 
 **Skills demonstrated:**
 
